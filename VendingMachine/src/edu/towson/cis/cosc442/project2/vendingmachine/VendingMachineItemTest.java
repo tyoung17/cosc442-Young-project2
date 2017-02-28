@@ -16,11 +16,11 @@ import org.junit.Test;
  */
 public class VendingMachineItemTest {
 
-	/** The item 3. */
+	/** The vending machine items test objects */
 	VendingMachineItem item1, item2, item3;
 	
 	/**
-	 * Sets the up.
+	 * The setUp method that creates the necessary test objects.
 	 *
 	 * @throws Exception the exception
 	 */
@@ -31,7 +31,8 @@ public class VendingMachineItemTest {
 	}
 	
 	/**
-	 * Test vending machine exception.
+	 * Test vending machine exception for the constructor
+	 * throws the exception if the price < 0.
 	 */
 	@Test(expected=VendingMachineException.class)
 	public void testVendingMachineException() {
@@ -39,7 +40,8 @@ public class VendingMachineItemTest {
 	}
 	
 	/**
-	 * Test get name.
+	 * Test if the get name method returns the correct
+	 * name of the item.
 	 */
 	@Test
 	public void testGetName() {
@@ -48,7 +50,8 @@ public class VendingMachineItemTest {
 	}
 	
 	/**
-	 * Test get price.
+	 * Test if the get price method returns the correct
+	 * price of the item.
 	 */
 	@Test
 	public void testGetPrice() {
